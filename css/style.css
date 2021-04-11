@@ -3,12 +3,18 @@
 }
 body{
     font-family: Arial;
-    padding: 10px;
+    width: 100%;
+    padding: 90px;
     background-color: whitesmoke;
 }
 header{
-    padding: 30px;
+    clear: both; /*clear the floating for the flooter on the left side or right, and it will remain in her place*/
+    display:inline-block;
+    width: 99%; /*talke the hole width on screen*/
+    height: 40%;
+    padding: 0px;
     text-align: center;
+
 }
 header nav{
     background-color: #383838;
@@ -28,22 +34,32 @@ header nav ul li a{
     font-size: 15px;
 }
 
+main img{
+    width: 90%;
+    padding-left: 12%;
+}
+body main section{
+    display: flex;
+    width: 352.5px;;
+    margin: 0px 50px 0px 100px;
+}
+
 
 main article{
     width: 100%;
-    display: inline-block;
-    padding: 2% 2% 2% 2%;
-    margin: auto;
+    display: flex;
+    margin: 0px 0px 0px 4px;
 }
 main article img{
     width: 50%;
     float: left;
+    height: 50%;
 
 }
 main article section{
     width: 50%;
-    /* display: inline-block; */
     float: right;
+    margin: 0px 0px 0px 5px;
     text-align: justify;
 }
 main article section h4{
@@ -53,31 +69,34 @@ main article section h4{
     padding-left: 40px;
 }
 main article section p{
-    border: 1px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
     width: 450px;
-    height: 400px;
+    height: 300px;
     overflow: scroll;
 }
 
 main article section p a {
     background-color: black;
     text-decoration: none;
-    color: blanchedalmond;
-    /* position: fixed; */
+    position: sticky;
+    color: whitesmoke;
+    top: 0;
+    left: 5;
+    width: 299px;
+    border: 3px solid black;
 }
-main article section p a:hover {
+main article p a:hover {
     /*when put the mouse om a tag, the color and text decoration*/
     text-decoration: underline;
     color: red;
 }
 footer{
     clear: both; /*clear the floating for the flooter on the left side or right, and it will remain in her place*/
-    color:#787878;
+    display:inline-block;
     background-color: #383838;
-    width: 100%;
+    color:#787878;
+    width: 99%; /*talke the hole width on screen*/
+    height: 40%;
     padding: 20px;
+    text-align: center;
+    
 }
